@@ -7,15 +7,13 @@ Pod::Spec.new do |s|
   s.social_media_url = 'https://twitter.com/componentkit'
   s.authors = 'adamjernst@fb.com'
   s.source = { :git => 'https://github.com/facebook/ComponentKit.git', :tag => s.version.to_s }
-  s.ios.deployment_target = '8.1'
+  s.ios.deployment_target = '7.0'
   s.requires_arc = true
-
-  s.source_files = 'ComponentKit/**/*', 'ComponentTextKit/**/*'
+  s.source_files = 'ComponentKit/**/*.{h,m,mm}', 'ComponentTextKit/**/*.{h,m,mm}'
   s.frameworks = 'UIKit', 'CoreText'
   s.library = 'c++'
   s.xcconfig = {
     'CLANG_CXX_LANGUAGE_STANDARD' => 'gnu++14',
     'CLANG_CXX_LIBRARY' => 'libc++',
   }
-  s.dependency 'Yoga', '~> 1.6.0'
 end
