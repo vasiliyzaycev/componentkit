@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.homepage = 'https://componentkit.org'
   s.social_media_url = 'https://twitter.com/componentkit'
   s.authors = 'adamjernst@fb.com'
-  s.source = { :git => 'https://git@github.com:vasiliyzaycev/componentkit.git', :tag => '0.20' }
+  s.source = { :git => 'https://github.com/facebook/ComponentKit.git', :tag => '0.20' }
   s.ios.deployment_target = '7.0'
   s.requires_arc = true
   s.source_files = 'ComponentKit/**/*.{h,m,mm}', 'ComponentTextKit/**/*.{h,m,mm}'
